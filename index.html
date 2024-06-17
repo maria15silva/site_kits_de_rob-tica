@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robótica Prática</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="Um site dedicado ao ensino da robótica como você nunca viu.">
+    <link rel="icon" href="./img/logo.png">
+</head>
+
+<body id="index" class="resizable">
+    <!-- Cabeçalho -->
+    <header class="resizable">
+        <div class="FlexMenu resizable">
+            <img src="./img/logo.png" alt="logo robótica prática" id="logo" class="resizable">
+            <!-- Menu -->
+            <nav class="resizable">
+                <input type="checkbox" id="check">
+                <label for="check">&#x268c;</label>
+                <ul class="resizable">
+                    <li><a href="index.html"><span id="s1">&#9750;</span> Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="top-controls">
+        <div class="font-controls">
+            <button id="increase-font-size">Aumentar Fonte</button>
+            <button id="decrease-font-size">Diminuir Fonte</button>
+            <button id="darkModeButton">Modo Escuro</button>
+        </div>
+        <div class="color-blindness-control">
+            <label for="color-filter">Filtro de Daltonismo:</label>
+            <select id="color-filter">
+                <option value="default">Cores padrão</option>
+                <option value="achromatomaly">Acromatopsia</option>
+                <option value="deuteranomaly">Deuteranomalia</option>
+                <option value="tritanomaly">Tritanomalia</option>
+                <option value="acromatomia">Acromatomia</option>
+                <option value="deuteranopia">Deuteranopia</option>
+                <option value="protanopia">Protanopia</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Destaque -->
+    <div id="destaque" class="resizable">
+        <video autoplay muted loop src="img/sonar.mp4"></video>
+        <div class="Banner resizable">
+            <div class="Container resizable">
+                <p id="slogan">Você faz. Você vê. Você aprende.</p>
+                <p id="textoDestaque">Um site dedicado a kits de robótica como você nunca viu.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Introdução -->
+    <main id="intro" class="resizable">
+        <div class="Container FlexSection resizable">
+            <div id="destaqueIntro" class="resizable">
+                <img src="./img/roboticaarduino.jpg" alt="robótica arduino" class="resizable">
+            </div>
+            <div id="textoIntro" class="resizable">
+                <h1>Aprender na prática</h1>
+                <p>Aprenda robótica de forma prática e divertida desenvolvendo projetos simples e de baixo custo.</p>
+                <div class="TopicosIntro FlexSection resizable">
+                    <img src="img/chatbot.png" alt="robô" class="resizable">
+                    <p>Robô Seguidor de Linha</p>
+                </div>
+                <div class="TopicosIntro FlexSection resizable">
+                    <img src="img/gerador.png" alt="robot" class="resizable">
+                    <p>Gerador de Energia Cinética Para Elétrico</p>
+                </div>
+                <div class="TopicosIntro FlexSection resizable">
+                    <img src="img/gerador-eletrico.png" alt="chip" class="resizable">
+                    <p>Irrigação Autônoma DIY</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- YouTube -->
+    <section id="youtube" class="resizable">
+        <div class="Container FlexSection resizable">
+            <div id="textoYoutube" class="resizable">
+                <p>"Robótica não é apenas uma indústria, é uma revolução." - <span class="Destacado"> Rodney Brooks</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="resizable">
+        <div class="Container resizable">
+            <h2>Que tipo de <span id="destacado2">projeto</span> você quer fazer hoje?</h2>
+            <!-- Cards -->
+            <div class="FlexCard resizable">
+                <div class="Card resizable">
+                    <img src="./img/img2.PNG" alt="robótica com arduino" class="resizable">
+                    <h3>Robô Seguidor de Linha</h3>
+                    <p>Um Robô Seguidor de Linha é um tipo de robô autônomo que utiliza sensores para detectar e seguir uma linha no chão, geralmente de cor preta ou branca, em um fundo contrastante.</p>
+                    <a href="seguidor de linha.html" class="Button">Saiba +</a>
+                </div>
+                <div class="Card resizable">
+                    <img src="./img/img3.PNG" alt="robótica com sucata" class="resizable">
+                    <h3>Gerador de Energia Cinética Para Elétrico</h3>
+                    <p>Um Gerador de Energia Cinética Para Elétrico é um dispositivo que converte energia mecânica, gerada a partir do movimento, em energia elétrica. </p>
+                    <a href="gerador de energia.html" class="Button">Saiba +</a>
+                </div>
+                <div class="Card resizable">
+                    <img src="./img/img4.PNG" alt="arduino" class="resizable">
+                    <h3>Irrigação Autônoma DIY</h3>
+                    <p>A Irrigação Autônoma DIY é um sistema de irrigação automatizado, esse sistema utiliza sensores de umidade do solo, temporizadores e controladores para monitorar e regar plantas.</p>
+                    <a href="irrigação autônoma.html" class="Button">Saiba +</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="resizable">
+        <div class="Container Flex resizable">
+            <div id="copyright">
+               <p>©<span id="copyrightYear"></span> Desenvolvido por Maria Clara, Maria Eduarda e Mariana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Integração VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Topo do site -->
+    <a href="#logo" id="topo"><img src="./img/topo.png" alt="seta topo"></a>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

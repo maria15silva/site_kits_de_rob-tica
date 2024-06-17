@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robô Seguidor de Linha</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description"
+        content="Projetos de robótica com uso do arduino, tendo como principais objetivos o uso de componentes comuns e o menor custo possível.">
+    <link rel="icon" href="./img/logo.png">
+</head>
+
+<body id="index" class="resizable">
+    <!-- Cabeçalho -->
+    <header class="resizable">
+        <div class="FlexMenu resizable">
+            <img src="./img/logo.png" alt="logo robótica prática" id="logo" class="resizable">
+            <!-- Menu -->
+            <nav class="resizable">
+                <input type="checkbox" id="check">
+                <label for="check">&#x268c;</label>
+                <ul class="resizable">
+                    <li><a href="index.html"><span id="s1">&#9750;</span> Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="top-controls">
+        <div class="font-controls">
+            <button id="increase-font-size">Aumentar Fonte</button>
+            <button id="decrease-font-size">Diminuir Fonte</button>
+            <button id="darkModeButton">Modo Escuro</button>
+        </div>
+        <div class="color-blindness-control">
+            <label for="color-filter">Filtro de Daltonismo:</label>
+            <select id="color-filter">
+                <option value="default">Cores padrão</option>
+                <option value="achromatomaly">Acromatopsia</option>
+                <option value="deuteranomaly">Deuteranomalia</option>
+                <option value="tritanomaly">Tritanomalia</option>
+                <option value="acromatomia">Acromatomia</option>
+                <option value="deuteranopia">Deuteranopia</option>
+                <option value="protanopia">Protanopia</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Banner das páginas -->
+    <main class="BannerPaginas Flex">
+        <div class="Container">
+            <h1>Robô Seguidor de Linha</h1>
+        </div>
+    </main>
+
+    <!-- Conteúdo -->
+    <section id="projetos">
+        <div class="Container">
+            <h2>Projeto Robô Seguidor de Linha</h2>
+        </div>
+        </div>
+    </section>
+
+    <section id="detalhes-projeto">
+        <div class="Container">
+            <h2>Detalhes do Projeto</h2>
+            <div class="FlexCard">
+                <div class="Card">
+                    <img src="img/img5.png" alt="">
+                    <h3>Estrutura e Movimento</h3>
+                    <p>Um robô seguidor de linha é composto por uma estrutura mecânica que suporta todos os componentes necessários para seu funcionamento. A base dessa estrutura é geralmente um chassi de material leve, como plástico ou metal, no qual são fixados os motores, rodas, e outros componentes.</p>
+                </div>
+                <div class="Card">
+                    <img src="img/img6.jpg" alt="">
+                    <h3>Sensores e Controle</h3>
+                    <p>O controle de um robô seguidor de linha é centralizado em um microcontrolador, como o Arduino, que processa os dados recebidos dos sensores e ajusta o movimento dos motores para manter o robô sobre a linha.
+                    </p>
+                    <a href="https://loja.roboticaeducacional.art.br/robo-seguidor-de-linha-tutorial-como-fazer" class="Button"
+                            target="_blank">Saiba +</a>
+                </div>
+                <div class="Card">
+                    <img src="img/img7.png" alt="">
+                    <h3>Energia e Programação</h3>
+                    <p>
+                        A fonte de energia e a programação são elementos cruciais para o funcionamento do robô seguidor de linha. A energia alimenta todos os componentes, enquanto a programação define como o robô reage às entradas dos sensores.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="Container Flex">
+            <div id="copyright">
+                <p>©<span id="copyrightYear"></span> Desenvolvido por Maria Clara, Maria Eduarda e Mariana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Integração VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Topo do site -->
+    <a href="#logo" id="topo"><img src="./img/topo.png" alt="seta topo"></a>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

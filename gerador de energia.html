@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Energia Cinética Para Elétrico</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description"
+        content="Projetos de robótica com uso do arduino, tendo como principais objetivos o uso de componentes comuns e o menor custo possível.">
+    <link rel="icon" href="./img/logo.png">
+</head>
+
+<body id="index" class="resizable">
+    <!-- Cabeçalho -->
+    <header class="resizable">
+        <div class="FlexMenu resizable">
+            <img src="./img/logo.png" alt="logo robótica prática" id="logo" class="resizable">
+            <!-- Menu -->
+            <nav class="resizable">
+                <input type="checkbox" id="check">
+                <label for="check">&#x268c;</label>
+                <ul class="resizable">
+                    <li><a href="index.html"><span id="s1">&#9750;</span> Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="top-controls">
+        <div class="font-controls">
+            <button id="increase-font-size">Aumentar Fonte</button>
+            <button id="decrease-font-size">Diminuir Fonte</button>
+            <button id="darkModeButton">Modo Escuro</button>
+        </div>
+        <div class="color-blindness-control">
+            <label for="color-filter">Filtro de Daltonismo:</label>
+            <select id="color-filter">
+                <option value="default">Cores padrão</option>
+                <option value="achromatomaly">Acromatopsia</option>
+                <option value="deuteranomaly">Deuteranomalia</option>
+                <option value="tritanomaly">Tritanomalia</option>
+                <option value="acromatomia">Acromatomia</option>
+                <option value="deuteranopia">Deuteranopia</option>
+                <option value="protanopia">Protanopia</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Banner das páginas -->
+    <main class="BannerPaginas Flex">
+        <div class="Container">
+            <h1>Gerador de Energia Cinética Para Elétrico</h1>
+        </div>
+    </main>
+
+    <!-- Conteúdo -->
+    <section id="projetos">
+        <div class="Container">
+            <h2>Gerador de Energia Cinética Para Elétrico</h2>
+        </div>
+        </div>
+    </section>
+
+    <section id="detalhes-projeto">
+        <div class="Container">
+            <h2>Detalhes do Projeto</h2>
+            <div class="FlexCard">
+                <div class="Card">
+                    <img src="img/img8.PNG" alt="">
+                    <h3> Princípios e Funcionamento </h3>
+                    <p>Um gerador de energia cinética para veículos elétricos transforma a energia do movimento (cinética) em energia elétrica, que pode ser utilizada para carregar baterias ou alimentar diretamente os sistemas elétricos do veículo.</p>
+                </div>
+                <div class="Card">
+                    <img src="img/img9.PNG" alt="">
+                    <h3>Componentes do Sistema</h3>
+                    <p> A implementação de um gerador de energia cinética em um veículo elétrico envolve vários componentes específicos, cada um desempenhando um papel crucial no processo de conversão e armazenamento de energia.
+                    </p>
+                    <a href="https://loja.roboticaeducacional.art.br/mini-gerador-cinetico-diy-transformando-energias" class="Button"
+                            target="_blank">Saiba +</a>
+                </div>
+                <div class="Card">
+                    <img src="img/img11.PNG" alt="">
+                    <h3>Aplicações e Benefícios</h3>
+                    <p>
+                        Os geradores de energia cinética oferecem vários benefícios e têm uma ampla gama de aplicações, especialmente em veículos elétricos e híbridos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="Container Flex">
+            <div id="copyright">
+                <p>©<span id="copyrightYear"></span> Desenvolvido por Maria Clara, Maria Eduarda e Mariana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Integração VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Topo do site -->
+    <a href="#logo" id="topo"><img src="./img/topo.png" alt="seta topo"></a>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
